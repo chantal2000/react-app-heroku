@@ -1,11 +1,11 @@
 // import './App.css';
-import Header from '../Component/Header';
-import Main from '../Component/Main';
-import Basket from '../Component/Basket';
-import data from '../Component/data';
+import Header from './Header';
+import Main from './Main';
+import Basket from './Basket';
+import data from './data';
 import { useState } from 'react';
 import React from 'react'
- import '../index.css';
+import '../index.css';
 import Footer from './Footer';
 
 function App() {
@@ -32,21 +32,26 @@ function App() {
             );
         }
     }
-    return ( 
-    <div className="App">
-        <Header counterCartItems={ cartItems.length}>
+    return ( <
+        div className = "App" >
+        <
+        Header counterCartItems = { cartItems.length } >
 
-        </Header>
-         <div className = "row">
-        <Main onAdd ={onAdd}
-        products = { products }>
-           </Main> 
-           <Basket onAdd ={ onAdd }
-               onRemove ={ onRemove }
-              cartItems ={cartItems}></Basket> 
-         </div> 
-         <Footer/>
-          </div>
+        <
+        /Header> <
+        div className = "row" >
+        <
+        Main onAdd = { onAdd }
+        products = { products } >
+        <
+        /Main>  <
+        Basket onAdd = { onAdd }
+        onRemove = { onRemove }
+        cartItems = { cartItems } > < /Basket>  <
+        /div>  <
+        Footer / >
+        <
+        /div>
     )
 
 }

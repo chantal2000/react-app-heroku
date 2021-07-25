@@ -6,10 +6,9 @@ import About from './Component/About';
 import Contact from './Component/Contact';
 import Home from './Component/Home';
 import Sell from './Component/Sell';
-// import Buy from './Component/Buy';
 import {Link,Route, BrowserRouter as Router} from 'react-router-dom'
 // import { Buy } from './Component/Buy';
-import { Footer } from './Component/Footer';
+// import { Footer } from './Component/Footer';
 function App(){
  
  return(
@@ -23,9 +22,9 @@ function App(){
        <span><Link to="/Sell"className="white">Sell Products</Link></span>
      </nav>
 
-     <Route path="/Home" exact component={Home} />
-     <Route path="/about" component={About} />
-     <Route path="/contact" component={Contact} />
+     <Route path="/Home" exact component={Home}/>
+     <Route path="/about" component={About}/>
+     <Route path="/contact" component={Contact}/>
      <Route path="/All"component={All}/>
      <Route path="/Sell"component={Sell}/>
      {/* <Route path="/Footer"component={Footer}/> */}
